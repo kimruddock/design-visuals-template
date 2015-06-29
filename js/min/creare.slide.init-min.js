@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#mainslider").flexslider({animation:"fade",prevText:"",nextText:"",directionNav:!1,controlNav:!0})});

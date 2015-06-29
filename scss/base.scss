@@ -1,0 +1,70 @@
+/*********************
+GENERAL STYLES
+**********************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+ul {
+	margin:0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+*, *:after, *:before {
+	@include box-sizing(border-box);
+}
+//img {width:100%; height:auto;display:block;}
+img {max-width: 100%;}
+
+body {
+	padding:0;
+	margin:0;
+	text-align:center;
+	font-family:$f-primary;
+	background:#111;
+	color:#444;
+}
+
+p {margin-bottom:20px;line-height: 2em;}
+
+section {text-align: left;}
+
+.wrap {
+	width:100%;
+	max-width: 960px;
+	margin:0 auto;
+	
+	@media screen and (max-width: 1280px) {
+		padding:0 20px;
+
+	}
+}
+
+/* Clearings */
+.wrap, .wrapper, .clear, .entry-content, .comment-content, .site-header, .site-content, .site-footer, .clearfix, .cf {
+	&:before, &:after {
+		content: '';
+		display: table;
+	}
+}
+.wrap, .wrapper, .clear, .entry-content, .comment-content, .site-header, .site-content, .site-footer, .clearfix, .cf {
+	&:before {
+		clear: both;
+	}
+}

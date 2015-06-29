@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".modal").on("click",function(e){e.preventDefault(),console.log("click"),$(".overlay").hasClass("active")?($(".overlay").removeClass("active"),setTimeout(function(){$(".overlay").addClass("close")},300)):$(".overlay").addClass("active").removeClass("close")})});

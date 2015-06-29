@@ -1,0 +1,28 @@
+.view:not(.first) {
+	display:none; /* stops other device views appearing */
+}
+
+.view {
+	img {
+		&.viewimg {
+			display:inline;
+			width:100%;
+			height:auto;
+		}
+		
+	}
+}
+
+@include bp($min, $visual-width) {
+	.view {
+		img.viewimg {
+			width:auto;
+		}
+	}
+}
+
+.wrapper {
+	width:100%;
+	max-width:$large;
+	margin:0 auto;
+}
