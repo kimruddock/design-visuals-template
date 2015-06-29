@@ -1,13 +1,14 @@
 /**
- * Gridpak Beta SCSS 
+ * Creare Grid
  *
- * Generator - http://gridpak.com/
- * Created by @erskinedesign
+ * A SASS grid system based on the work by http://gridpak.com 
+ *
+ * Created by @erskinedesign, Kim Ruddock
  */
 
 /* Reusable column setup */
 
-@mixin gp-col {
+@mixin col {
     border:0px solid rgba(0,0,0,0);
     float:left;
     -webkit-box-sizing:border-box;
@@ -18,7 +19,7 @@
     background-clip:padding-box !important;
 }
 
-@mixin gp-row {
+@mixin row {
   
   &:before, &:after {
     content: '';
@@ -30,7 +31,7 @@
 }
 
 .col {
-   @include gp-col;
+   @include col;
 }
 
 @mixin span($num, $gutter_pc, $gutter_px, $padding, $max_columns) {
@@ -54,17 +55,6 @@
     }
 }
 
-Z.row .col:first-child {
-    @include span_first;
-}
-
 .example_span {
     @include span(1, 2%, 0, 0, 16);
 }
-
-.example_fullspan {
-    @include span_first;
-    width:100%;
-}
-
- 
